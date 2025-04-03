@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Scent Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app" class="min-h-screen">
+        <div id="quiz-container" class="container">
+            <div class="text-center mb-8">
+                <div class="heart-icon"></div>
+                <h1>Personality Scent Test</h1>
+                <p class="question-counter"></p>
+            </div>
+
+            <div class="question-content mb-8">
+                <img class="question-image" alt="">
+                <h2 class="question-text"></h2>
+
+                <div class="options-grid">
+                    <!-- Options will be inserted here -->
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <span class="question-progress"></span>
+                <div class="progress-dots">
+                    <!-- Dots will be inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <div id="result-container" class="container hidden">
+            <div class="text-center">
+                <div class="sparkle-icon"></div>
+                <h1>Your Perfect Scent Profile</h1>
+                <h2 class="profile-title"></h2>
+                <p class="profile-description"></p>
+
+                <div class="notes-container">
+                    <h3>Key Notes</h3>
+                    <div class="notes-grid">
+                        <!-- Notes will be inserted here -->
+                    </div>
+                </div>
+
+                <button class="reset-button">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
