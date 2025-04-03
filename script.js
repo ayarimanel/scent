@@ -21,7 +21,7 @@ const questions = [
         id: 4,
         text: "Choose your comfort drink:",
         image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800",
-        options: ["Coffee", "Tea", "Wine", "Fresh juice"]
+        options: ["Coffee", "Tea", "Soda", "Fresh juice"]
     },
     {
         id: 5,
@@ -132,7 +132,7 @@ class PersonalityScentTest {
             romantic: this.answers.filter(a => ['Reading a book', 'Spring', 'Sunset', 'Tea', 'Beach paradise', 'Romantic'].includes(a)).length,
             fresh: this.answers.filter(a => ['Going on an adventure', 'Summer', 'Dawn', 'Fresh juice', 'Mountain retreat', 'Energetic'].includes(a)).length,
             woody: this.answers.filter(a => ['Relaxing at home', 'Fall', 'Midday', 'Coffee', 'Forest cabin', 'Peaceful'].includes(a)).length,
-            oriental: this.answers.filter(a => ['Party with friends', 'Winter', 'Night', 'Wine', 'City exploration', 'Mysterious'].includes(a)).length
+            oriental: this.answers.filter(a => ['Party with friends', 'Winter', 'Night', 'Soda', 'City exploration', 'Mysterious'].includes(a)).length
         };
 
         return Object.entries(scores).reduce((a, b) => a[1] > b[1] ? a : b)[0];
